@@ -1,0 +1,379 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+#dashboardMainContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+div.dashboard_sidebar{
+    width: 350px; 
+    background: #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+}
+div.dashboard_content_container{
+    flex-grow: 1; 
+    margin-left: 130px; 
+    padding-left: 20px; 
+    transition: margin-left 0.3s;
+    
+}
+
+h3.dashboard_logo{
+    color: #f685a1;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+div.dashboard_sidebar_user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+div.dashboard_sidebar_user img{
+    width: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #f685a1;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+div.dashboard_sidebar_user span{
+    top:20%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+ul.dashboard_menu_lists{
+    margin-top: 0px;
+    padding: 20px 0;
+}
+ul.dashboard_menu_lists li.liMainMenu{
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+ul.dashboard_menu_lists li.liMainMenu a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 15px 15px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    
+}
+ul.dashboard_menu_lists li.liMainMenu a i{
+    font-size: 23px;
+    width: 30px;
+    
+}
+ul.dashboard_menu_lists li.liMainMenu a:hover{
+    background: #f685a1;
+    color: #fff;
+    transition: 0.3s all;
+}
+ul.dashboard_menu_lists li menuActive{
+    background: #f685a1;
+    color: #fff;
+}
+
+div.dashboard_topNav{
+    background: #fff;
+    padding: 20px;
+    color: #848383;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+a#logoutBtn{
+    float: right;
+    text-decoration: none;
+}
+.title {
+    background-color: #ddd; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+div.dashboard_content{
+    padding: 50px 10px 10px 10px;
+    
+}
+div.dashboard_content_main{
+    background: #fff;
+    min-height: 450px;
+    height: 80%;    
+}
+h1{
+    font-size: 36px !important;
+}
+h2{
+    font-size: 26px !important;
+    margin: 20px 30px;
+}
+#searchInput{
+    width: calc(60% - 120px); 
+    padding: 20px;
+    margin: 20px -20px 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+#searchInput:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0px 0px 8px rgba(0,102,204,0.3);
+  }
+  a.subMenuLink{
+    padding-left: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none;
+    font-size: 15px !important;
+}
+a.subMenuLink i{
+    font-size: 16px !important;
+    width: 16px !important;
+}
+ul.subMenus{
+    background: #c26a80;
+    display: none;
+    padding-left: 12px;
+}
+mainMenuIconArrow{
+    float: right;
+    font-size: 19px !important;
+    margin-top: 7px;
+}
+.subMenuActive{
+    font-weight: bold;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: #763a49;
+}  
+.input-group .btn-info {
+    padding: 10px 10px;
+    margin: 20px 50px;
+    border: none;
+    background-color: #f685a1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .input-group .btn-info:hover,
+  .input-group .btn-info:active,
+  .input-group .btn-info:focus {
+    background-color: #db9aaa;
+}
+#orderProductBtn {
+   margin: 20px 30px;
+}  
+
+.alignRight {
+    display: flex; 
+    justify-content: flex-start;
+    gap: 10px; 
+    
+}
+
+button.appBtn{
+    background: #f685a1;
+    border: 1px solid #f685a1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    float: right;
+}
+button.appBtnReset{
+    background: cornflowerblue;
+    border: 1px solid #f685a1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    
+}
+.btn-phieu
+{
+    font-size: 20px;
+}
+.user{
+    font-size: 15px !important;
+}
+
+table {
+    width: 100%; 
+    max-width: 100%; 
+    border-collapse: collapse; 
+    table-layout: fixed; 
+}
+
+table thead th {
+    background-color: #f685a1;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    
+}
+
+table tbody td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word; 
+}
+
+table tbody {
+    display: block;
+    max-height: 500px; 
+    overflow-y: auto; /
+    
+}
+
+table thead {
+    display: block; 
+}
+
+table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /
+}
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+p.userCount{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin: 20px 0 80px 0;
+}
+.result p{
+    margin: 0;
+    padding: 7px 10px !important;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    cursor: pointer;
+    
+}
+.result p:hover{
+    background: #f2f2f2;
+}
+
+
+form::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+form.appForm
+{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid pink;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.appCoverInput
+{
+    margin-bottom: 20px;
+}
+.appFormInput
+{
+    width: 100%;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#userAddFormContainer
+{
+    margin: 20px 20px;
+}
+
+
+.responseMessageText
+{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 33px;
+    background-color: #db9aaa;
+    padding: 20px;
+}
+.responseMessage__success
+{
+    background-color: #db9aaa;
+}
+.responseMessage__error
+{
+    background-color: #db9aaa;
+}
+
+@media screen and (max-width: 600px) {
+    #dashboardMainContainer {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    div.dashboard_sidebar {
+        position: static;
+        width: 100%;
+    }
+
+    div.dashboard_content_container,
+    div.search-bar,
+    form.appForm {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
+
+    .search-bar {
+        width: calc(100% - 20px); 
+    }
+    
+    table,
+    th,
+    td {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+
